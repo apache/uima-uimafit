@@ -29,7 +29,8 @@
   <section>
     <title>Making types auto-detectable</title>
     <para>The provider of a type system should create a file
-        <filename>META-INF/org.apache.uima.fit/types.txt</filename> in the classpath. This file
+        <filename>META-INF/org.apache.uima.fit/types.txt</filename><footnote><para>Note the whole name
+            of the directory is <filename>org.apache.uima.fit</filename></para></footnote> in the classpath. This file
       should define the locations of the type system descriptions. Assume that a type
         <classname>org.apache.uima.fit.type.Token</classname> is specified in the TSD
         <filename>org/apache/uima/fit/type/Token.xml</filename>, then the file should have the
