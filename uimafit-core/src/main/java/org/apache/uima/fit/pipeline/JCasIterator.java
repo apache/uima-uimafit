@@ -85,6 +85,7 @@ public class JCasIterator implements Iterator<JCas> {
     }
 
     jCas = CasCreationUtils.createCas(metaData).getJCas();
+    collectionReader.typeSystemInit(jCas.getTypeSystem());
   }
 
   /**

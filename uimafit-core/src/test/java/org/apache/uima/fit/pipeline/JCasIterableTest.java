@@ -28,6 +28,7 @@ import java.io.IOException;
 
 import org.apache.uima.UimaContext;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
+import org.apache.uima.cas.TypeSystem;
 import org.apache.uima.collection.CollectionException;
 import org.apache.uima.fit.component.JCasAnnotator_ImplBase;
 import org.apache.uima.fit.component.JCasCollectionReader_ImplBase;
@@ -55,6 +56,13 @@ public class JCasIterableTest {
     private final int N = 3;
     private int n = 0;
     
+    private boolean initTypeSystemCalled = false;
+          
+    @Override
+    public void typeSystemInit(TypeSystem aTypeSystem) throws ResourceInitializationException {
+      initTypeSystemCalled = true;
+    }
+    
     public Progress[] getProgress() {
       return new Progress[] { new ProgressImpl(n, N, "document") };
     }
@@ -65,6 +73,7 @@ public class JCasIterableTest {
 
     @Override
     public void getNext(JCas aJCas) throws IOException, CollectionException {
+      assertTrue("typeSystemInit() has not been called", initTypeSystemCalled);
       n++;
       aJCas.setDocumentText("Document " + n);
     }
