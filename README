@@ -16,7 +16,8 @@ following list highlights some of the features uimaFIT provides:
 
  * Factories: simplify instantiating UIMA components programmatically without descriptor files.  
    For example, to instantiate an AnalysisEngine a call like this could be made: 
-   AnalysisEngineFactory.createPrimitive(MyAEImpl.class, myTypeSystem, paramName, paramValue)
+   
+     AnalysisEngineFactory.createEngine(MyAEImpl.class, myTypeSystem, paramName, paramValue, ...)
 
  * Injection: handles the binding of configuration parameter values to the corresponding member
    variables in the analysis engines and handles the binding of external resources. For example,
@@ -49,6 +50,7 @@ A full list of issues addressed in this release can be found on the Apache issue
 
 Supported Platforms
 -------------------
+
 uimaFIT requires Java 1.6 or higher, UIMA 2.6.0 or higher, and the Spring Framework 3.1.2 or higher.
 
 
