@@ -55,7 +55,7 @@ uimaFIT requires Java 1.6 or higher, UIMA 2.6.0 or higher, and the Spring Framew
 Availability
 ------------
 
-uimaFIT is licensed with Apache License 2.0 and is available from the Apache UIMA project:
+uimaFIT is licensed under the Apache License 2.0 and is available from the Apache UIMA project:
 
 http://uima.apache.org
 http://svn.apache.org/repos/asf/uima/uimafit
