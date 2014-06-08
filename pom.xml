@@ -132,6 +132,9 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-changes-plugin</artifactId>
+						<!-- See UIMA-3764 -->
+						<!-- Can be removed after upgrading to uima-parent-pom 10+ -->
+						<version>2.10</version>
 						<inherited>false</inherited>
 						<executions>
 							<execution>
