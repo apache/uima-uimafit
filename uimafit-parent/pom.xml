@@ -23,7 +23,7 @@
     <groupId>org.apache.uima</groupId>
     <artifactId>parent-pom</artifactId>
     <relativePath />
-    <version>14-SNAPSHOT</version>
+    <version>14</version>
   </parent>
   <artifactId>uimafit-parent</artifactId>
   <version>2.5.1-SNAPSHOT</version>
@@ -32,20 +32,14 @@
   <url>${uimaWebsiteUrl}</url>
   <inceptionYear>2012</inceptionYear>
   <properties>
-    <spring.version>4.3.26.RELEASE</spring.version>
-    <uima.version>2.10.4</uima.version>
+    <spring.version>4.3.30.RELEASE</spring.version>
+    <uima.version>2.10.5-SNAPSHOT</uima.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <!-- 
-     BACKWARD_COMPATIBLE_IMPLEMENTER - patch version (=.=.+)
-     BACKWARD_COMPATIBLE_USER        - minor version (=.+.0)
-     NON_BACKWARD_COMPATIBLE         - major version (+.0.0)
-    -->
-    <api_check_oldVersion>2.4.0</api_check_oldVersion>
+    <api_check_oldVersion>2.5.0</api_check_oldVersion>
   </properties>
   <!--
     - Only required while uimaFIT depends on unreleased versions of UIMA.
-    -->
   <repositories>
     <repository>
       <id>apache.snapshots</id>
@@ -56,10 +50,10 @@
       </releases>
     </repository>
   </repositories>
+    -->
   <pluginRepositories>
     <!--
       - For UIMA/uimaFIT SNAPSHOTs
-    -->
     <pluginRepository>
       <id>apache.snapshots.plugins</id>
       <name>Apache Snapshot Repository - Maven plugins</name>
@@ -74,6 +68,7 @@
         <updatePolicy>never</updatePolicy>
       </snapshots>
     </pluginRepository>
+    -->
   </pluginRepositories>
 
   <dependencies>
@@ -339,42 +334,6 @@
                     <versionRange>[1.4,)</versionRange>
                     <goals>
                       <goal>execute</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <!-- *********************************************** -->
-                <!-- The Maven Dev Connector for Eclipse m2e is no   -->
-                <!-- longer maintained. We copy the relevant part    --> 
-                <!-- of the lifecycle mapping for the                -->
-                <!-- maven-plugin-plugin here.                       -->
-                <!--                                                 -->
-                <!-- See https://github.com/ifedorenko/com.ifedorenko.m2e.mavendev/blob/master/com.ifedorenko.m2e.mavendev/lifecycle-mapping-metadata.xml -->
-                <!-- *********************************************** -->
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-plugin-plugin</artifactId>
-                    <versionRange>[3.5.2,)</versionRange>
-                    <goals>
-                      <goal>descriptor</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <execute>
-                      <runOnIncremental>false</runOnIncremental>
-                    </execute>
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-plugin-plugin</artifactId>
-                    <versionRange>[3.5.2,)</versionRange>
-                    <goals>
-                      <goal>helpmojo</goal>
                     </goals>
                   </pluginExecutionFilter>
                   <action>
