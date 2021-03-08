@@ -44,10 +44,12 @@ as a drop-in replacement for previous uimaFIT 2.x versions.
 
 Notable changes include:
 
- * Added facility to validate CASes for consistency using pluggable validators
+ * Added facility to validate CASes for consistency using plug-able validators
  * Improved performance of constructing type system descriptions, index definitions and
    type priorities based on classpath scanning
  * Improved performance of selectCovering
+ * Changed select* methods to align with the new behavior of the select API in UIMA 3.2.0 in
+   particular with respect to zero-width annotations
  * Changed uimaFIT plugin to by default fail when an error is encountered
  * Changed the documentation format from DocBook XML to Asciidoc
  * Fixed uimaFIT Maven plugin failing to import type systems in "generate" goal
