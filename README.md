@@ -54,17 +54,18 @@ Notable changes include:
  * Changed the documentation format from DocBook XML to Asciidoc
  * Fixed uimaFIT Maven plugin failing to import type systems in "generate" goal
  * Fixed ability of InitializableFactory to choose the proper classloader
+ * Fixed parallelism parameter in the CpePipeline
  * Upgraded to UIMA 2.11.0
  * Upgraded to Spring 4.3.30
 
 A full list of issues addressed in this release can be found on the Apache issue tracker:
 
-  https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12310570&version=12339544
+  https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12343820&projectId=12310570
 
 Supported Platforms
 -------------------
 
-uimaFIT requires Java 1.8 or higher, UIMA 2.11.0 or higher, and the Spring Framework 4.3.26 or higher.
+uimaFIT requires Java 1.8 or higher, UIMA 2.11.0 or higher, and the Spring Framework 4.3.30 or higher.
 
 
 Availability

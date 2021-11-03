@@ -20,6 +20,23 @@
 
 This section provides helpful information on incompatible changes between versions.
 
+== Version 2.5.0 to 2.6.0
+
+.Version requirements
+Depends on UIMA 2.11.0, Spring Framework 4.3.30 and Java 8.
+
+Mind the updated version requirements.
+There should be no other potentially problematic changes in this upgrade.
+
+== Version 2.4.0 to 2.5.0
+
+.Version requirements
+Depends on UIMA 2.10.2, Spring Framework 3.2.16 and Java 8.
+
+Mind the updated version requirements.
+There should be no other potentially problematic changes in this upgrade.
+
+
 == Version 2.3.0 to 2.4.0
 
 .Version requirements
