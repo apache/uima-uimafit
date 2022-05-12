@@ -15,7 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
   
-@Library('uima-build-jenkins-shared-library') _
+@Library('uima-build-jenkins-shared-library@UIMA-6451-Jenkins-builds-should-run-against-multiple-platforms') _
 
 defaultPipeline {
   extraMavenArguments = '-Pjacoco,spotbugs,pmd'
