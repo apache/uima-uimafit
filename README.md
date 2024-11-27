@@ -1,5 +1,12 @@
 [![Maven Central](https://img.shields.io/maven-central/v/org.apache.uima/uimafit-core?style=for-the-badge)](https://search.maven.org/search?q=g:org.apache.uima%20a:uimafit*)
 
+# Important notice
+uimaFIT has been integrated into the [Apache UIMA Java SDK](https://github.com/apache/uima-uimaj) with version 3.6.0. 
+With this integration, uimaFIT ceases to exist as a separate sub-project.
+For the time being, uimaFIT artifacts continue to be released as part of the Java SDK releases under the familiar Maven coorinates.
+The merge of uimaFIT into the core Java SDK paves the way for further integrating the uimaFIT functionalities into the framework core.
+
+
 Apache uimaFIT (TM)
 ===================
 
